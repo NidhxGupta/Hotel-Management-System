@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Add Customer Info</title>
+		
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous">
+	</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            Hotel Management System
+          </a>
+        </div>
+      </nav>
+	
+	  <div class="container" my-1 py-1>
+		  <br>
+		  <br>
+		<h1>Form</h1>
+	  </div>
+	  <div class="container" my-2 py-2>
+		<form action="#" th:action="@{/deletecustomer}" th:object="${customer}" method="post">
+			<p>Mobile Number: <input type="text" th:field="*{number}" /></p>
+			<input type="submit" value="Submit" />
+		</form>
+	  </div>
+	<nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="mx-auto">
+          <p style="text-align: center;"> Done by Nidhi Gupta (PES2UG19CS256), Minal H R (PES2UG19CS234) and Nikila S (PES2UG19CS260)</p>
+        </div>
+      </nav>
+    <div class="container-fluid">
+    
+    </div>
+</body>
+</html>

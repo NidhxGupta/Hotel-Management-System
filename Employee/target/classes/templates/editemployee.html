@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+	<h1>Edit Emloyee Form</h1>
+    <form action="#" th:action="@{/editemployee}" th:object="${Employee}" method="post">
+        OLD Employee
+    	<p>EmployeeName: <input type="text" th:field="*{EmployeeName}" /></p>
+        <p>Employeesalary: <input type="text" th:field="*{Employeesalary}" /></p>
+        <p>Employeedob: <input type="text" th:field="*{Employeedob}" /></p>
+        <p>Employeedescription: <input type="text" th:field="*{Employeedescription}" /></p>
+        <p>Employeesatus: <input type="text" th:field="*{Employeestatus}" /></p>
+        <p>Employeeid: <input type="text" th:field="*{Employeeid}" /></p>
+        New Employee
+
+        <p>EmployeeName: <input type="text" th:field="*{EmployeeName2}" /></p>
+        <p>Employeesalary: <input type="text" th:field="*{Employeesalary2}" /></p>
+        <p>Employeedob: <input type="text" th:field="*{Employeedob2}" /></p>
+        <p>Employeedescription: <input type="text" th:field="*{Employeedescription2}" /></p>
+        <p>Employeesatus: <input type="text" th:field="*{Employeestatus2}" /></p>
+        <p>Employeeid: <input type="text" th:field="*{Employeeid2}" /></p>
+        
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
